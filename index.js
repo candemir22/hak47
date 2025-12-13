@@ -6,16 +6,11 @@ async function initMap() {
     const { Map } = (await google.maps.importLibrary('maps'));
     const { AdvancedMarkerElement } = (await google.maps.importLibrary('marker'));
     let markers = [];
-
+    gmp-map center="43,42.01" zoom="18" map-id="8b37d7206ccf0121d4414bb0";
     
-        const advancedMarker = new AdvancedMarkerElement({
-            position: new google.maps.LatLng({42, 42}),
-            collisionBehavior: collisionBehavior,   });
+        const advancedMarker = new AdvancedMarkerElement({ position="42.4220656,42.0840897"  });
 
-         <gmp-map center="42.773,42.01" zoom="8" map-id="8b37d7206ccf0121d4414bb0">
-  <gmp-advanced-marker position="42.4220656,42.0840897" title="Mountain View, CA"></gmp-advanced-marker>
-  <gmp-advanced-marker position="42.648994,42.3503845" title="Seattle, WA"></gmp-advanced-marker>
-</gmp-map>
+
 
 
     
