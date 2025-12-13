@@ -1,1 +1,1 @@
-# hak47
+# tekl-basit
