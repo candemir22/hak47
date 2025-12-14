@@ -13,9 +13,33 @@ async function initMap() {
     const { Map } = (await google.maps.importLibrary('maps'));
     const { AdvancedMarkerElement } = (await google.maps.importLibrary('marker'));
     let markers = [];
-        const advancedMarker = new AdvancedMarkerElement({
-            position: new google.maps.LatLng({42,42})     });
+
+
     
+        const gmp-advanced-marker = new AdvancedMarkerElement({
+               map,
+    draggable: true,
+         position: { lat: 42.327, lng: 42.067 }, 
+        addListener("mouseover", kazibol),
+            addListener("click", cikis),
+            });
+    
+
+function kazibol() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    	window.speechSynthesis.speak(new SpeechSynthesisUtterance('kazı bölgesi '));
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  
+  }}
+
+function cikis() {
+     marker.setAnimation(null);
+     	window.speechSynthesis.speak(new SpeechSynthesisUtterance('bu bölgenin proje kodu 128.60'));  
+}
+            
+   
     
    
 }
