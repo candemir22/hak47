@@ -15,14 +15,7 @@ async function initMap() {
     let markers = [];
 
 
-    
-        const gmp-advanced-marker = new AdvancedMarkerElement({
-               map,
-    draggable: true,
-         position: { lat: 42.327, lng: 42.067 }, 
-        addListener("mouseover", kazibol),
-            addListener("click", cikis),
-            });
+
     
 
 function kazibol() {
